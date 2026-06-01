@@ -5,23 +5,23 @@
 class Karat < Formula
   desc "Terminal UI for Apache Kafka"
   homepage "https://github.com/uraniumdawn/karat"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   depends_on "librdkafka"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/uraniumdawn/karat/releases/download/v0.2.1/karat_Darwin_x86_64.tar.gz"
-    sha256 "42804449eb1d4dc7a2fd2e9c90dce3a2a16fe312473a79cdc29ca1d4a336fac8"
+    url "https://github.com/uraniumdawn/karat/releases/download/v0.2.2/karat_Darwin_x86_64.tar.gz"
+    sha256 "244c0956447a84b110c324f9c3da0a90d3d27795bef964dc95e62663f190de9d"
 
     define_method(:install) do
       bin.install "karat"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/uraniumdawn/karat/releases/download/v0.2.1/karat_Darwin_arm64.tar.gz"
-    sha256 "df00ac0e8674ac0897c15395353dbf24032f9d7fb7c77cfba881a3dad197e4d4"
+    url "https://github.com/uraniumdawn/karat/releases/download/v0.2.2/karat_Darwin_arm64.tar.gz"
+    sha256 "58c39dc38e02af7ab10a27f0b71cd8088a89f61df1b2874811d557d027603c9d"
 
     define_method(:install) do
       bin.install "karat"
